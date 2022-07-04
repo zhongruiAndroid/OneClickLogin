@@ -100,22 +100,29 @@ OneClickLoginSDK.get().setUnicomConfig(appId,appSecret);
 ```java
 //设置属性
 PageConfig config=new PageConfig();
+
 config.authLayoutId=R.layout.layout_custion_login;
 config.authAppIconResourceId=R.mipmap.ic_launcher;
-//xml里面设置一个宽高为0的viewId(电信专用)
+/*xml里面设置一个宽高为0的viewId(电信专用)*/
 config.authLoginCompatId=R.id.xxx;
 
-//设置授权页隐私协议链接
+/*设置授权页隐私协议链接*/
 AgreementItem item = new AgreementItem("服务条款", "https://www.baidu.com");
 item.setColor(Color.RED);
-//单独设置分隔符，优先级高于authAgreementSeparator属性
+/*单独设置分隔符，优先级高于authAgreementSeparator属性*/
 item.setSuffixSeparator("和");
 config.addAgreement(item);
 
 config.addAgreement(new AgreementItem("隐私条款","https://www.taobao.com"));
-...其他属性见上面表格
+/*...其他属性见上面表格*/
 
-//isWindow,true:标识window模式下的view设置，false:全屏授权页view设置
+/*授权页添加其他view的点击事件*/
+config.addViewClick(R.id.xxx);
+config.addViewClick(R.id.xxx);
+config.addViewClick(R.id.xxx);
+config.addViewClick(R.id.xxx);
+
+/*isWindow,true:标识window模式下的view设置，false:全屏授权页view设置*/
 OneClickLoginSDK.get().setViewConfig(isWindow,config);
 ```
 
@@ -125,7 +132,7 @@ Operator operator = OneClickLoginSDK.get().getOperator();
 MOBILE	：移动
 TELECOM	：电信
 UNICOM	：联通
-UN		：未知
+UN	：未知
         
 //预登陆(移动和电信预登陆一次，后面可以连续登录，联通登录之前必须再预登陆一次)
 OneClickLoginSDK.get().preLogin(new OneClickListener() {
