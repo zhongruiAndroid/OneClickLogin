@@ -166,6 +166,7 @@ public void switchLogin() {
 }
 @Override
 public void viewClick(View view) {
+//通过config.addViewClick(R.id.xxx);设置的点击事件会收到回调
 //view点击，需要关闭授权页面时，可调用OneClickLoginSDK.get().finishAuthPage();
 }
 @Override
