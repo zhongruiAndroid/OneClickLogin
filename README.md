@@ -1,8 +1,8 @@
-## [封装一键登录aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/edit/master/OneClickLogin-release.aar "aar文件")
+## [封装一键登录aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/master/OneClickLogin-debug.aar "aar文件")
 集成到项目里面,需要将三大运营的aar放进去
-## [移动aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/edit/master/quick_login_android_5.9.3.aar "aar文件")
-## [电信aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/edit/master/CTAccountSdk_HY_v3.7.6_all.aar "aar文件")
-## [联通aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/edit/master/unicom_login_android_v5.1.0.aar "aar文件")
+## [移动aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/master/quick_login_android_5.9.3.aar "aar文件")
+## [电信aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/master/CTAccountSdk_HY_v3.7.6_all.aar "aar文件")
+## [联通aar下载](https://raw.githubusercontent.com/zhongruiAndroid/OneClickLogin/master/unicom_login_android_v5.1.0.aar "aar文件")
 
  
  | 属性                                       | 说明                                                                                                           |
