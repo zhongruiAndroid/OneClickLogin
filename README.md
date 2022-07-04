@@ -134,7 +134,7 @@ TELECOM	：电信
 UNICOM	：联通
 UN	：未知
         
-//预登陆(移动和电信预登陆一次，后面可以连续登录，联通登录之前必须再预登陆一次)
+//预登陆(移动和电信预登陆一次，后面可以连续登录，联通登录之前必须要预登陆一次)
 OneClickLoginSDK.get().preLogin(new OneClickListener() {
 @Override
 public void success(String securePhoneOrAccessCode, String originData, Operator operator){
